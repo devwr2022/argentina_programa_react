@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="style.css" type="text/css">.
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+
+<div class="titulo">
+   <h2>Seguro No Pagamos Cooperativa</h2>
+</div>
+
+<div class="contenedor-form"> 
+
+<form>
+    <div>
+      <label>Nombre</label>
+      <input name="nombre" id="nombre" />
+    </div>
+    <div>
+      <label>Apellido</label>
+      <input name="apellido" id="apellido" />
+    </div>
+    <div>
+      <label>DNI</label>
+      <input name="dni" id="dni" />
+    </div>
+    <div>
+      <label>Email</label>
+      <input name="email" id="email" />
+    </div>
+    <div>
+      <label>Telefono</label>
+      <input name="telefono" id="telefono" />
+    </div>
+  
+    <div>
+     <label>Tipo de Seguro</label>
+     <select id='dropdown' onInput='myFunction()'> 
+
+          <option value="Basico">Seguro Basico</option>
+          <option value="Intermedio">Seguro Intermedio</option>
+          <option value="Premium">Seguro Premium</option>
+    </select>
+   </div>
+</form>
+
+</div>
+
+<div class="contenedor-out">
+  <!-- <p>(Seguro seleccionado): </p> 
+   <span id='output'></span>  -->
+   <p>Seguro Elegido:  </p>
+   <h3 id="coste"></h3> 
+</div>
+
+<!--
+<script>
+    function myFunction() {
+     
+        
+
+     var optionValue = document.getElementById("dropdown").value;
+     document.getElementById("output").innerHTML = optionValue;
+
+     console.log(optionValue);
+
+     if (optionValue=="Basico") { console.log("El seguro elegido es el Basico y su costo es de $500");
+      costo="Basico $500";} 
+     else if(optionValue=="Intermedio") {console.log("El seguro elegido es el Intermedio y su costo es de $1000");
+      costo="Intermedio $1000";}
+     else {console.log("El seguro elegido es el Premium y su costo es de $1500");
+          costo="Premium $1500";
+        }
+   
+      console.log(costo);
+      
+      document.getElementById('coste').innerHTML=costo;
+    }  
+    
+    </script>   -->
+
+
+</body>
+
+</html>
